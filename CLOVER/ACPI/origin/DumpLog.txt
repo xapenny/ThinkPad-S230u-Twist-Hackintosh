@@ -1,0 +1,74 @@
+81:675  0:254  Found UEFI Acpi 2.0 RSDP at DAFFE014
+81:675  0:000  Saving ACPI tables from RSDP DAFFE014 to EFI\CLOVER\ACPI\origin ...
+81:675  0:000   DAFFE014: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+81:675  0:000    (Xsdt: DAFFE170, Rsdt: DAFFE0D4)
+81:675  0:000    DAFFE170: 'XSDT', 'TP-GD', Rev: 1, Len: 172
+81:675  0:000    DAFFE0D4: 'RSDT', 'TP-GD', Rev: 1, Len: 104
+81:675  0:000    Tables in Xsdt: 17
+81:675  0:000    0. DAFEA000: 'FACP', 'TP-GD', Rev: 5, Len: 268
+81:675  0:000        (Dsdt: DAFEC000, Facs: DAF59000, XDsdt: DAFEC000, XFacs: 0)
+81:675  0:000        DAFEC000: 'DSDT', 'TP-GD', Rev: 2, Len: 59712
+81:677  0:002        DAF59000: 'FACS', Ver: 2, Len: 64
+81:677  0:000    1. DAFFD000: 'TCPA', 'LENOVO', Rev: 2, Len: 50
+81:677  0:000    2. DAFFC000: 'SSDT', 'SataAhci', Rev: 2, Len: 1617
+81:677  0:000    3. DAFFB000: 'SSDT', 'PtidDevc', Rev: 2, Len: 1701
+81:677  0:000    4. DAFEB000: 'ASF!', 'TP-GD', Rev: 32, Len: 165
+81:677  0:000    5. DAFE8000: 'HPET', 'TP-GD', Rev: 1, Len: 56
+81:677  0:000    6. DAFE7000: 'APIC', 'TP-GD', Rev: 3, Len: 152
+81:677  0:000    7. DAFE6000: 'MCFG', 'TP-GD', Rev: 1, Len: 60
+81:677  0:000    8. DAFE5000: 'FPDT', 'TP-GD', Rev: 1, Len: 100
+81:677  0:000    9. DAFE4000: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 2210
+81:677  0:000    10. DAFE3000: 'SSDT', 'CpuPm', Rev: 2, Len: 2850
+81:677  0:000    11. DAFE2000: 'UEFI', 'TP-GD', Rev: 1, Len: 62
+81:677  0:000    12. DAFE1000: 'UEFI', 'COMBUF', Rev: 1, Len: 66
+81:677  0:000    13. DAF54000: 'MSDM', 'TP-GD', Rev: 3, Len: 85
+81:677  0:000    14. DAFE0000: 'UEFI', 'TP-GD', Rev: 1, Len: 698
+81:677  0:000    15. DAFDF000: 'DBG2', 'TP-GD', Rev: 0, Len: 165
+81:677  0:000    16. DAFDE000: 'BGRT', 'TP-GD', Rev: 0, Len: 56
+81:677  0:000    Tables in Rsdt: 17
+81:677  0:000    0. DAFE9000: 'FACP', 'TP-GD', Rev: 4, Len: 244
+81:677  0:000        (Dsdt: DAFEC000, Facs: DAF59000, XDsdt: 0, XFacs: 0)
+81:677  0:000        DAFEC000: 'DSDT', 'TP-GD', Rev: 2, Len: 59712
+81:680  0:002        DAF59000: 'FACS', Ver: 2, Len: 64
+81:680  0:000    1. DAFFD000: 'TCPA', 'LENOVO', Rev: 2, Len: 50
+81:680  0:000    2. DAFFC000: 'SSDT', 'SataAhci', Rev: 2, Len: 1617
+81:680  0:000    3. DAFFB000: 'SSDT', 'PtidDevc', Rev: 2, Len: 1701
+81:680  0:000    4. DAFEB000: 'ASF!', 'TP-GD', Rev: 32, Len: 165
+81:680  0:000    5. DAFE8000: 'HPET', 'TP-GD', Rev: 1, Len: 56
+81:680  0:000    6. DAFE7000: 'APIC', 'TP-GD', Rev: 3, Len: 152
+81:680  0:000    7. DAFE6000: 'MCFG', 'TP-GD', Rev: 1, Len: 60
+81:680  0:000    8. DAFE5000: 'FPDT', 'TP-GD', Rev: 1, Len: 100
+81:680  0:000    9. DAFE4000: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 2210
+81:680  0:000    10. DAFE3000: 'SSDT', 'CpuPm', Rev: 2, Len: 2850
+81:680  0:000    11. DAFE2000: 'UEFI', 'TP-GD', Rev: 1, Len: 62
+81:680  0:000    12. DAFE1000: 'UEFI', 'COMBUF', Rev: 1, Len: 66
+81:680  0:000    13. DAF54000: 'MSDM', 'TP-GD', Rev: 3, Len: 85
+81:680  0:000    14. DAFE0000: 'UEFI', 'TP-GD', Rev: 1, Len: 698
+81:680  0:000    15. DAFDF000: 'DBG2', 'TP-GD', Rev: 0, Len: 165
+81:680  0:000    16. DAFDE000: 'BGRT', 'TP-GD', Rev: 0, Len: 56
+81:680  0:000  Found UEFI Acpi 1.0 RSDP at DAFFE000
+81:680  0:000  Printing ACPI tables from RSDP DAFFE000 ...
+81:680  0:000   DAFFE000: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20
+81:680  0:000    (Rsdt: DAFFE038)
+81:680  0:000    DAFFE038: 'RSDT', 'TP-GD', Rev: 1, Len: 104
+81:680  0:000    Tables in Rsdt: 17
+81:680  0:000    0. DAFE9000: 'FACP', 'TP-GD', Rev: 4, Len: 244
+81:680  0:000        (Dsdt: DAFEC000, Facs: DAF59000, XDsdt: 0, XFacs: 0)
+81:680  0:000        DAFEC000: 'DSDT', 'TP-GD', Rev: 2, Len: 59712
+81:682  0:002        DAF59000: 'FACS', Ver: 2, Len: 64
+81:682  0:000    1. DAFFD000: 'TCPA', 'LENOVO', Rev: 2, Len: 50
+81:682  0:000    2. DAFFC000: 'SSDT', 'SataAhci', Rev: 2, Len: 1617
+81:682  0:000    3. DAFFB000: 'SSDT', 'PtidDevc', Rev: 2, Len: 1701
+81:682  0:000    4. DAFEB000: 'ASF!', 'TP-GD', Rev: 32, Len: 165
+81:682  0:000    5. DAFE8000: 'HPET', 'TP-GD', Rev: 1, Len: 56
+81:682  0:000    6. DAFE7000: 'APIC', 'TP-GD', Rev: 3, Len: 152
+81:682  0:000    7. DAFE6000: 'MCFG', 'TP-GD', Rev: 1, Len: 60
+81:682  0:000    8. DAFE5000: 'FPDT', 'TP-GD', Rev: 1, Len: 100
+81:682  0:000    9. DAFE4000: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 2210
+81:682  0:000    10. DAFE3000: 'SSDT', 'CpuPm', Rev: 2, Len: 2850
+81:682  0:000    11. DAFE2000: 'UEFI', 'TP-GD', Rev: 1, Len: 62
+81:682  0:000    12. DAFE1000: 'UEFI', 'COMBUF', Rev: 1, Len: 66
+81:682  0:000    13. DAF54000: 'MSDM', 'TP-GD', Rev: 3, Len: 85
+81:682  0:000    14. DAFE0000: 'UEFI', 'TP-GD', Rev: 1, Len: 698
+81:682  0:000    15. DAFDF000: 'DBG2', 'TP-GD', Rev: 0, Len: 165
+81:682  0:000    16. DAFDE000: 'BGRT', 'TP-GD', Rev: 0, Len: 56
