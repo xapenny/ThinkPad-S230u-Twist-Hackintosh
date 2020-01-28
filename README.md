@@ -11,6 +11,7 @@
 1. 无论OC还是Clover我在config里都去掉了机器序列号和UUID，如果需要iMessage的要自己写入白苹果三码
 2. 本套配置默认使用OpenCore引导，使用前需要在BIOS里修改一些项目，具体细节请参考[黑果小兵的OpenCore教程](https://blog.daliansky.net/OpenCore-BootLoader.html)
 3. 如果想使用Clover，请先移走`/Boot`目录下的`BOOTx64.efi`,并将`Clover_BOOTX64.efi`重命名为`BOOTx64.efi`
+4. 由于我个人使用的部分软件无法在10.15上使用，已经降级10.14.6，故位于`master`分支的10.15.x支持的更新暂停。接下来的更新会围绕10.14.x在`10.14 Mojave`分支进行更新。
 
 ---
 
