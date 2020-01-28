@@ -30,6 +30,14 @@
 				<key>Path</key>
 				<string>SSDT-PLUG.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-Keyboard</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-Keyboard.aml</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array/>
@@ -63,9 +71,9 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>_Q12 to XQ12</string>
+				<string>&quot;Handoff Fix&quot;</string>
 				<key>Count</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>Enabled</key>
 				<false/>
 				<key>Find</key>
@@ -95,11 +103,11 @@
 			<key>NormalizeHeaders</key>
 			<true/>
 			<key>RebaseRegions</key>
-			<false/>
+			<true/>
 			<key>ResetHwSig</key>
-			<false/>
+			<true/>
 			<key>ResetLogoStatus</key>
-			<false/>
+			<true/>
 		</dict>
 	</dict>
 	<key>Booter</key>
@@ -129,12 +137,12 @@
 			<true/>
 			<key>DevirtualiseMmio</key>
 			<false/>
-			<key>DisableVariableWrite</key>
-			<true/>
 			<key>DisableSingleUser</key>
 			<false/>
-			<key>DiscardHibernateMap</key>
+			<key>DisableVariableWrite</key>
 			<false/>
+			<key>DiscardHibernateMap</key>
+			<true/>
 			<key>EnableSafeModeSlide</key>
 			<true/>
 			<key>EnableWriteUnprotector</key>
@@ -144,7 +152,7 @@
 			<key>ProtectCsmRegion</key>
 			<false/>
 			<key>ProvideCustomSlide</key>
-			<true/>
+			<false/>
 			<key>SetupVirtualMap</key>
 			<true/>
 			<key>ShrinkMemoryMap</key>
@@ -276,6 +284,22 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
+				<string>FakePCIID_BCM94352Z_as_BCM94360CS2.kext</string>
+				<key>Comment</key>
+				<string>BCM94352HMB</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
 				<string>SMCBatteryManager.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -324,6 +348,22 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
+				<string>VoodooTSCSync.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoodooTSCSync</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
 				<string>SMCProcessor.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -356,54 +396,6 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>CPUFriendDataProvider.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>CPUFriend.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/CPUFriend</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>BrcmBluetoothInjector.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
 				<string>BrcmFirmwareData.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -420,13 +412,13 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>BrcmPatchRAM3.kext</string>
+				<string>BrcmBluetoothInjector.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/BrcmPatchRAM3</string>
+				<string>Contents/MacOS/BrcmBluetoothInjector</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -436,13 +428,13 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>BT4LEContinuityFixup.kext</string>
+				<string>BrcmPatchRAM2.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/BT4LEContinuityFixup</string>
+				<string>Contents/MacOS/BrcmPatchRAM2</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -531,13 +523,6 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 		</array>
-		<key>Emulate</key>
-		<dict>
-			<key>Cpuid1Data</key>
-			<data></data>
-			<key>Cpuid1Mask</key>
-			<data></data>
-		</dict>
 		<key>Block</key>
 		<array>
 			<dict>
@@ -553,6 +538,13 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>Emulate</key>
+		<dict>
+			<key>Cpuid1Data</key>
+			<data></data>
+			<key>Cpuid1Mask</key>
+			<data></data>
+		</dict>
 		<key>Patch</key>
 		<array>
 			<dict>
@@ -687,23 +679,23 @@
 			<key>PanicNoKextDump</key>
 			<false/>
 			<key>PowerTimeoutKernelPanic</key>
-			<false/>
-			<key>ThirdPartyTrim</key>
-			<false/>
-			<key>XhciPortLimit</key>
 			<true/>
+			<key>XhciPortLimit</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>Misc</key>
 	<dict>
 		<key>BlessOverride</key>
-		<array/>
+		<array>
+			<string>\EFI\Microsoft\Boot\bootmgfw.efi</string>
+		</array>
 		<key>Boot</key>
 		<dict>
 			<key>ConsoleBehaviourOs</key>
-			<string></string>
+			<string>Graphics</string>
 			<key>ConsoleBehaviourUi</key>
-			<string></string>
+			<string>ForceText</string>
 			<key>ConsoleMode</key>
 			<string></string>
 			<key>HibernateMode</key>
@@ -724,17 +716,34 @@
 		<key>Debug</key>
 		<dict>
 			<key>DisableWatchDog</key>
-			<false/>
+			<true/>
 			<key>DisplayDelay</key>
 			<integer>0</integer>
 			<key>DisplayLevel</key>
-			<integer>2147483650</integer>
+			<integer>0</integer>
 			<key>Target</key>
-			<integer>19</integer>
+			<integer>0</integer>
 		</dict>
+		<key>Entries</key>
+		<array>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string>Windows 8</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Name</key>
+				<string>Windows 8</string>
+				<key>Path</key>
+				<string>PciRoot(0x0)/Pci(0x1F,0x2)/Sata(0x0,0x0,0x0)/HD(1,GPT,67FC4E65-E549-4BE8-A0C3-D1E0D2EB1D7F,0x1000,0x200000)/\EFI\Microsoft\Boot\bootmgfw.efi</string>
+			</dict>
+		</array>
 		<key>Security</key>
 		<dict>
 			<key>AllowNvramReset</key>
+			<true/>
+			<key>AllowSetDefault</key>
 			<true/>
 			<key>ExposeSensitiveData</key>
 			<integer>3</integer>
@@ -752,41 +761,26 @@
 			<dict>
 				<key>Arguments</key>
 				<string></string>
-				<key>Name</key>
-				<string>UEFI Shell</string>
 				<key>Comment</key>
 				<string>Not signed for security reasons</string>
 				<key>Enabled</key>
 				<false/>
+				<key>Name</key>
+				<string>UEFI Shell</string>
 				<key>Path</key>
 				<string>Shell.efi</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
 				<string></string>
-				<key>Name</key>
-				<string>memcheck</string>
 				<key>Comment</key>
 				<string>Memory testing utility</string>
 				<key>Enabled</key>
 				<false/>
+				<key>Name</key>
+				<string>memcheck</string>
 				<key>Path</key>
 				<string>memcheck/memcheck.efi</string>
-			</dict>
-		</array>
-		<key>Entries</key>
-		<array>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Name</key>
-				<string>CustomOS</string>
-				<key>Comment</key>
-				<string>Not signed for security reasons</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Path</key>
-				<string>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)/NVMe(0x1,11-22-33-44-55-66-77-88)/HD(1,GPT,00000000-0000-0000-0000-000000000000,0x800,0x64000)/\EFI\BOOT\BOOTX64.EFI</string>
 			</dict>
 		</array>
 	</dict>
@@ -802,7 +796,9 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>Slide=1 -xcpm</string>
+				<string>-xcpm</string>
+				<key>csr-active-config</key>
+				<string>&lt;E7030000&gt;</string>
 				<key>nvda_drv</key>
 				<data></data>
 				<key>prev-lang:kbd</key>
@@ -821,34 +817,9 @@
 			</array>
 		</dict>
 		<key>LegacyEnable</key>
+		<false/>
+		<key>WriteFlash</key>
 		<true/>
-		<key>LegacySchema</key>
-		<dict>
-			<key>8BE4DF61-93CA-11D2-AA0D-00E098032B8C</key>
-			<array>
-				<string>Boot0080</string>
-				<string>Boot0081</string>
-				<string>Boot0082</string>
-				<string>BootNext</string>
-				<string>BootOrder</string>
-			</array>
-			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
-			<array>
-				<string>EFILoginHiDPI</string>
-				<string>EFIBluetoothDelay</string>
-				<string>LocationServicesEnabled</string>
-				<string>SystemAudioVolume</string>
-				<string>SystemAudioVolumeDB</string>
-				<string>bluetoothActiveControllerInfo</string>
-				<string>bluetoothInternalControllerInfo</string>
-				<string>flagstate</string>
-				<string>fmm-computer-name</string>
-				<string>nvda_drv</string>
-				<string>prev-lang:kbd</string>
-				<string>efi-boot-device</string>
-				<string>efi-boot-device-data</string>
-			</array>
-		</dict>
 	</dict>
 	<key>PlatformInfo</key>
 	<dict>
@@ -857,9 +828,9 @@
 		<key>Generic</key>
 		<dict>
 			<key>MLB</key>
-			<string>C023324054NDYKF1H</string>
+			<string></string>
 			<key>ROM</key>
-			<data></data>
+			<data>ynjrhsqX</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
@@ -886,8 +857,7 @@
 		<array>
 			<string>ApfsDriverLoader.efi</string>
 			<string>FwRuntimeServices.efi</string>
-			<string>VBoxHfs.efi</string>
-			<string>UsbKbDxe.efi</string>
+			<string>HFSPlus.efi</string>
 			<string>VirtualSmc.efi</string>
 		</array>
 		<key>Input</key>
@@ -905,7 +875,7 @@
 			<key>PointerSupport</key>
 			<false/>
 			<key>PointerSupportMode</key>
-			<string>ASUS</string>
+			<string></string>
 			<key>TimerResolution</key>
 			<integer>50000</integer>
 		</dict>
@@ -945,11 +915,11 @@
 			<key>IgnoreInvalidFlexRatio</key>
 			<true/>
 			<key>IgnoreTextInGraphics</key>
-			<false/>
+			<true/>
 			<key>ProvideConsoleGop</key>
 			<true/>
 			<key>ReconnectOnResChange</key>
-			<true/>
+			<false/>
 			<key>ReleaseUsbOwnership</key>
 			<false/>
 			<key>ReplaceTabWithSpace</key>
