@@ -22,7 +22,7 @@
 	<string>1.0</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>MacBookAir5,2-EHC1</key>
+		<key>iMacPro1,1-EHC1</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBMergeNub</string>
@@ -42,7 +42,7 @@
 				</data>
 				<key>ports</key>
 				<dict>
-					<key>PRT1</key>
+					<key>PR01</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
@@ -54,9 +54,9 @@
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>MacBookAir5,2</string>
+			<string>iMacPro1,1</string>
 		</dict>
-		<key>MacBookAir5,2-XHC</key>
+		<key>iMacPro1,1-XHC</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBMergeNub</string>
@@ -72,10 +72,73 @@
 			<dict>
 				<key>port-count</key>
 				<data>
-				BwAAAA==
+				CAAAAA==
 				</data>
 				<key>ports</key>
 				<dict>
+					<key>HS01</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>0</integer>
+						<key>port</key>
+						<data>
+						AQAAAA==
+						</data>
+					</dict>
+					<key>HS02</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>0</integer>
+						<key>port</key>
+						<data>
+						AgAAAA==
+						</data>
+					</dict>
+					<key>HS03</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>0</integer>
+						<key>port</key>
+						<data>
+						AwAAAA==
+						</data>
+					</dict>
+					<key>HS04</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>0</integer>
+						<key>port</key>
+						<data>
+						BAAAAA==
+						</data>
+					</dict>
+					<key>HSP1</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>0</integer>
+						<key>port</key>
+						<data>
+						AQAAAA==
+						</data>
+					</dict>
+					<key>HSP2</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>0</integer>
+						<key>port</key>
+						<data>
+						AgAAAA==
+						</data>
+					</dict>
+					<key>SS01</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>port</key>
+						<data>
+						BQAAAA==
+						</data>
+					</dict>
 					<key>SS02</key>
 					<dict>
 						<key>UsbConnector</key>
@@ -94,10 +157,19 @@
 						BwAAAA==
 						</data>
 					</dict>
+					<key>SS04</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>port</key>
+						<data>
+						CAAAAA==
+						</data>
+					</dict>
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>MacBookAir5,2</string>
+			<string>iMacPro1,1</string>
 		</dict>
 	</dict>
 	<key>OSBundleRequired</key>

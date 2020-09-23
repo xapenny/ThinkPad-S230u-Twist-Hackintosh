@@ -10,7 +10,8 @@
 
 1. 无论OC还是Clover我在config里都去掉了机器序列号和UUID，如果需要iMessage的要自己写入白苹果三码
 2. 本套配置默认使用OpenCore引导，使用前需要在BIOS里修改一些项目，具体细节请参考[黑果小兵的OpenCore教程](https://blog.daliansky.net/OpenCore-BootLoader.html)
-3. 如果想使用Clover，请先移走`/Boot`目录下的`BOOTx64.efi`,并将`Clover_BOOTX64.efi`重命名为`BOOTx64.efi`
+~~3. 如果想使用Clover，请先移走`/Boot`目录下的`BOOTx64.efi`,并将`Clover_BOOTX64.efi`重命名为`BOOTx64.efi`~~
+4. *由于OpenCore启用了BootStrap引导，故需要在BOOTICE中修改启动序列，添加`EFI\OC\Bootstrap\Bootstrap.efi`为启动项并移动至第一项才能正确进入OC。*
 
 ---
 
@@ -60,14 +61,19 @@
 
 ### 适用系统
 
-- macOS 10.12 Sierra
-- macOS 10.13 High Sierra 
+- ~~macOS 10.12 Sierra~~
+- ~~macOS 10.13 High Sierra~~ 
 - macOS 10.14 Mojave
-- macOS 10.15 Catalina
+- ~~macOS 10.15 Catalina~~
+
+经过测试，10.14是最适合这台机器的版本，没有之一。
 
 ---
 
 ### 更新日志
+- 2020.9.23
+
+> 1. 更新至目前我自用的版本，具体忘了更新什么了。此次应该是最后一次更新。
 
 - 2020.2.8
 
